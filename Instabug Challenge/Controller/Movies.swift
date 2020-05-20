@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class Movies: UIViewController {
 
     struct customized {
         static var customMovies = [Movie]()
@@ -91,7 +91,7 @@ class ViewController: UIViewController {
     
 }
 
-extension ViewController: UITableViewDelegate, UITableViewDataSource {
+extension Movies: UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 2
@@ -99,7 +99,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0{
-            return ViewController.customized.customMovies.count
+            return Movies.customized.customMovies.count
         } else {
             return movies.count
         }
@@ -117,8 +117,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "movieCell", for: indexPath) as? MovieCell else{
             fatalError("An error occurred while instantiating the cell")
         }
-        let singleMovie = indexPath.section == 0 ? ViewController.customized.customMovies[indexPath.row] : movies[indexPath.row]
-        cell.posterImage!.image = indexPath.section == 0 ? ViewController.customized.customImages[indexPath.row].image : images[indexPath.row].image
+        let singleMovie = indexPath.section == 0 ? Movies.customized.customMovies[indexPath.row] : movies[indexPath.row]
+        cell.posterImage!.image = indexPath.section == 0 ? Movies.customized.customImages[indexPath.row].image : images[indexPath.row].image
         cell.movieName.text = singleMovie.title
         cell.movieDate.text = singleMovie.date
         cell.movieOverview.text = singleMovie.overview

@@ -9,10 +9,9 @@
 /* Begin PBXBuildFile section */
 		1ABD94962471AADF00826B88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABD94952471AADF00826B88 /* AppDelegate.swift */; };
 		1ABD94982471AADF00826B88 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABD94972471AADF00826B88 /* SceneDelegate.swift */; };
-		1ABD949A2471AADF00826B88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABD94992471AADF00826B88 /* ViewController.swift */; };
+		1ABD949A2471AADF00826B88 /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABD94992471AADF00826B88 /* Movies.swift */; };
 		1ABD949D2471AADF00826B88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ABD949B2471AADF00826B88 /* Main.storyboard */; };
 		1ABD949F2471AAE200826B88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ABD949E2471AAE200826B88 /* Assets.xcassets */; };
-		1ABD94A22471AAE200826B88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ABD94A02471AAE200826B88 /* LaunchScreen.storyboard */; };
 		1ABD94AD2471AAE200826B88 /* Instabug_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABD94AC2471AAE200826B88 /* Instabug_ChallengeTests.swift */; };
 		1ABD94B82471AAE200826B88 /* Instabug_ChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABD94B72471AAE200826B88 /* Instabug_ChallengeUITests.swift */; };
 		1ABD94C72471F4FA00826B88 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABD94C62471F4FA00826B88 /* Movie.swift */; };
@@ -42,10 +41,9 @@
 		1ABD94922471AADE00826B88 /* Instabug Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Instabug Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ABD94952471AADF00826B88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1ABD94972471AADF00826B88 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1ABD94992471AADF00826B88 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1ABD94992471AADF00826B88 /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
 		1ABD949C2471AADF00826B88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1ABD949E2471AAE200826B88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1ABD94A12471AAE200826B88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1ABD94A32471AAE200826B88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1ABD94A82471AAE200826B88 /* Instabug ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Instabug ChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ABD94AC2471AAE200826B88 /* Instabug_ChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instabug_ChallengeTests.swift; sourceTree = "<group>"; };
@@ -107,17 +105,15 @@
 		1ABD94942471AADE00826B88 /* Instabug Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				1AFE8D1324750429008B8FFE /* Controller */,
+				1AFE8D1224750426008B8FFE /* View */,
+				1AFE8D112475041B008B8FFE /* Model */,
+				1AFE8D1024750410008B8FFE /* Networking */,
 				1ABD94952471AADF00826B88 /* AppDelegate.swift */,
 				1ABD94972471AADF00826B88 /* SceneDelegate.swift */,
-				1ABD94992471AADF00826B88 /* ViewController.swift */,
 				1ABD949B2471AADF00826B88 /* Main.storyboard */,
-				1ABD949E2471AAE200826B88 /* Assets.xcassets */,
-				1ABD94A02471AAE200826B88 /* LaunchScreen.storyboard */,
 				1ABD94A32471AAE200826B88 /* Info.plist */,
-				1ABD94C62471F4FA00826B88 /* Movie.swift */,
-				1ABD94C82472039A00826B88 /* MovieCell.swift */,
-				1ABD94CA2472041A00826B88 /* Networking.swift */,
-				1ABD94EE2473244B00826B88 /* AddMovie.swift */,
+				1ABD949E2471AAE200826B88 /* Assets.xcassets */,
 			);
 			path = "Instabug Challenge";
 			sourceTree = "<group>";
@@ -138,6 +134,47 @@
 				1ABD94B92471AAE200826B88 /* Info.plist */,
 			);
 			path = "Instabug ChallengeUITests";
+			sourceTree = "<group>";
+		};
+		1AFE8D1024750410008B8FFE /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				1ABD94CA2472041A00826B88 /* Networking.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		1AFE8D112475041B008B8FFE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1ABD94C62471F4FA00826B88 /* Movie.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1AFE8D1224750426008B8FFE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1AFE8D1424750446008B8FFE /* Table View Cells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1AFE8D1324750429008B8FFE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1ABD94992471AADF00826B88 /* Movies.swift */,
+				1ABD94EE2473244B00826B88 /* AddMovie.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1AFE8D1424750446008B8FFE /* Table View Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1ABD94C82472039A00826B88 /* MovieCell.swift */,
+			);
+			path = "Table View Cells";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,7 +281,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1ABD94A22471AAE200826B88 /* LaunchScreen.storyboard in Resources */,
 				1ABD949F2471AAE200826B88 /* Assets.xcassets in Resources */,
 				1ABD949D2471AADF00826B88 /* Main.storyboard in Resources */,
 			);
@@ -271,7 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1ABD949A2471AADF00826B88 /* ViewController.swift in Sources */,
+				1ABD949A2471AADF00826B88 /* Movies.swift in Sources */,
 				1ABD94962471AADF00826B88 /* AppDelegate.swift in Sources */,
 				1ABD94C72471F4FA00826B88 /* Movie.swift in Sources */,
 				1ABD94CB2472041B00826B88 /* Networking.swift in Sources */,
@@ -319,14 +355,6 @@
 				1ABD949C2471AADF00826B88 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		1ABD94A02471AAE200826B88 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1ABD94A12471AAE200826B88 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

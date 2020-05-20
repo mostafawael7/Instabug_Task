@@ -70,10 +70,10 @@ class AddMovie: UIViewController {
             if imageView.image == nil {
                 imageView.image = UIImage(named: "default")
             }
-            let vc = self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "Movies") as! Movies
             let movie = Movie(title: movieTitleField.text!, overview: movieOverviewField.text!, date: movieDateField.text!)
-            ViewController.customized.customMovies.append(movie)
-            ViewController.customized.customImages.append(imageView)
+            Movies.customized.customMovies.append(movie)
+            Movies.customized.customImages.append(imageView)
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }
