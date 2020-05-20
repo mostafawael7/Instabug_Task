@@ -15,6 +15,10 @@
 		1ABD94A22471AAE200826B88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ABD94A02471AAE200826B88 /* LaunchScreen.storyboard */; };
 		1ABD94AD2471AAE200826B88 /* Instabug_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABD94AC2471AAE200826B88 /* Instabug_ChallengeTests.swift */; };
 		1ABD94B82471AAE200826B88 /* Instabug_ChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABD94B72471AAE200826B88 /* Instabug_ChallengeUITests.swift */; };
+		1ABD94C72471F4FA00826B88 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABD94C62471F4FA00826B88 /* Movie.swift */; };
+		1ABD94C92472039A00826B88 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABD94C82472039A00826B88 /* MovieCell.swift */; };
+		1ABD94CB2472041B00826B88 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABD94CA2472041A00826B88 /* Networking.swift */; };
+		1ABD94EF2473244B00826B88 /* AddMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABD94EE2473244B00826B88 /* AddMovie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		1ABD94B32471AAE200826B88 /* Instabug ChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Instabug ChallengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ABD94B72471AAE200826B88 /* Instabug_ChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instabug_ChallengeUITests.swift; sourceTree = "<group>"; };
 		1ABD94B92471AAE200826B88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1ABD94C62471F4FA00826B88 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		1ABD94C82472039A00826B88 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		1ABD94CA2472041A00826B88 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		1ABD94EE2473244B00826B88 /* AddMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMovie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +114,10 @@
 				1ABD949E2471AAE200826B88 /* Assets.xcassets */,
 				1ABD94A02471AAE200826B88 /* LaunchScreen.storyboard */,
 				1ABD94A32471AAE200826B88 /* Info.plist */,
+				1ABD94C62471F4FA00826B88 /* Movie.swift */,
+				1ABD94C82472039A00826B88 /* MovieCell.swift */,
+				1ABD94CA2472041A00826B88 /* Networking.swift */,
+				1ABD94EE2473244B00826B88 /* AddMovie.swift */,
 			);
 			path = "Instabug Challenge";
 			sourceTree = "<group>";
@@ -261,6 +273,10 @@
 			files = (
 				1ABD949A2471AADF00826B88 /* ViewController.swift in Sources */,
 				1ABD94962471AADF00826B88 /* AppDelegate.swift in Sources */,
+				1ABD94C72471F4FA00826B88 /* Movie.swift in Sources */,
+				1ABD94CB2472041B00826B88 /* Networking.swift in Sources */,
+				1ABD94C92472039A00826B88 /* MovieCell.swift in Sources */,
+				1ABD94EF2473244B00826B88 /* AddMovie.swift in Sources */,
 				1ABD94982471AADF00826B88 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -444,7 +460,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Hendawi.Instabug-Challenge";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -462,7 +478,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Hendawi.Instabug-Challenge";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
